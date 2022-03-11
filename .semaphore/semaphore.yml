@@ -12,3 +12,4 @@ blocks:
           commands:
             - dir
             - echo "Hello asdfasdfa"
+          parallelism: 4
