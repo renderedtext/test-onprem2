@@ -12,4 +12,4 @@ blocks:
           commands:
             - ls -lah
             - sudo lshw
-          parallelism: 5
+          parallelism: 10
