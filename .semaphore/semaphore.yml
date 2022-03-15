@@ -2,7 +2,7 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: s1-windows-2
+    type: s1-linux-aws-pool
     os_image: ''
 blocks:
   - name: 'Block #1'
@@ -10,6 +10,6 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - dir
-            - echo "Hello asdfasdfa"
+            - ls -lah
+            - sudo lshw
           parallelism: 4
