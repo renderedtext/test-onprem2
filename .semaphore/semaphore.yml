@@ -15,3 +15,17 @@ blocks:
         - name: 'Job #2'
           commands:
             - ls -lah
+    dependencies: []
+  - name: Windows
+    dependencies: []
+    task:
+      agent:
+        machine:
+          type: s1-windows-aws-pool
+          os_image: ''
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - dir
+            - checkout
+            - dir
